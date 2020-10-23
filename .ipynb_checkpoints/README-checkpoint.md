@@ -13,7 +13,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 ## Describe your dataset in about 150-200 words
 
-the data set we choose was 
+{Add your stuff here}
 
 ## Team Members
 
