@@ -2,7 +2,6 @@
 
 =======
 # Group 6019 - Between the Sheets with Virtual Linebackers and Running backs
->>>>>>> 2add747203cd15b540fa3ad91300579cfa1e31ad
 
 
 ## Milestones
@@ -21,7 +20,6 @@ We chose a data set created by Daniel Fernandez on Kaggle at https://www.kaggle.
 The data within is a curated list of ratings for different attributes within the game, as well as a few pieces of their identity. These are meant to be updated throughout the season and will aim to reflect how the real players compete in the real world. The data was first created before the launch of the NFL season on September 10 2020, right through until February 7 2021. We will be using the first set of data otherwise known as "Launch Rating". 
 
 The purpose of this dataset is to be a bit of fun and to inform players of Madden 21.
->>>>>>> 2add747203cd15b540fa3ad91300579cfa1e31ad
 
 
 ## Team Members
