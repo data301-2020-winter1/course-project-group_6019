@@ -22,4 +22,16 @@ def load_data():
     
     data = pd.read_csv("../../data/raw/madden21_ratings.csv")
     return data
+
+def  Years_Pro():
+    df= (
+        pd.read_csv('../../data/raw/madden21_ratings.csv')
+        .dropna()
+    )
+   
+    df2= (    
+            df.filter(['Team', 'Years Pro'])
+            .sort_values('Years Pro', ascending=False)
+    )
+    return df2
     

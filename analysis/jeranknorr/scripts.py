@@ -9,12 +9,9 @@ def load_and_process():
    
     df2= (    
             df.filter(['Team', 'Full Name', 'Overall Rating', 'Position'])
-<<<<<<< HEAD
 )
     return df2
-=======
-    )
-    return df2
+
 
 def QuarterBack_Score(df):
     
@@ -65,4 +62,4 @@ def Kicker_Score(df):
 
 def Punter_Score(df):
     return  df.loc[lambda x: x['Position'].str.contains('P')].groupby('Team')['Overall Rating'].max().reset_index().sort_values('Overall Rating', ascending=False).reset_index(drop=True).rename(columns={'Overall Rating': 'Top Punter'})
->>>>>>> 6e23c487109a7dd835cd77d77cc037a6009ffb75
+
