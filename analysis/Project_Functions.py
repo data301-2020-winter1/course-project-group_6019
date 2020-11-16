@@ -1,6 +1,19 @@
 import numpy as np
 import pandas as pd
 
+
+def load_data():
+    
+    data = pd.read_csv("../../data/raw/madden21_ratings.csv")
+    return data
+    
+    
+def basics(data):
+    print(data.head())
+    print(data.shape)
+    print(data.columns)
+    
+    
 def load_and_process():
     df= (
         pd.read_csv('../../data/raw/madden21_ratings.csv')
@@ -8,8 +21,7 @@ def load_and_process():
     )
    
     df2= (    
-            df.filter(['Team', 'Full Name', 'Overall Rating', 'Position'])
-)
+            df.filter(['Team', 'Full Name', 'Overall Rating', 'Position']))
     return df2
 
 
@@ -62,4 +74,3 @@ def Kicker_Score(df):
 
 def Punter_Score(df):
     return  df.loc[lambda x: x['Position'].str.contains('P')].groupby('Team')['Overall Rating'].max().reset_index().sort_values('Overall Rating', ascending=False).reset_index(drop=True).rename(columns={'Overall Rating': 'Top Punter'})
-
